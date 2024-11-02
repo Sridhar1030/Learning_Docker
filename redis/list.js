@@ -10,6 +10,9 @@ async function init() {
     await client.lpush("names", "Eve")
     await client.lpush("names", "Frank")
 
+    //expire any  key
+    
+
     //get all names
     const names = await client.lrange("names", 0, -1)
 
